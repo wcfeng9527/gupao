@@ -11,6 +11,9 @@
     <modules>
         <module>desig_mode_factory</module>
         <module>desig_mode_singleton</module>
+        <module>desig_mode_prototype</module>
+        <module>desig_mode_proxy</module>
+        <module>desig_mode_delegate</module>
     </modules>
 
 
