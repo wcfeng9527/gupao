@@ -1,4 +1,4 @@
-/target/
+
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -23,5 +23,7 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/target/
 
 *.class
+*.war
