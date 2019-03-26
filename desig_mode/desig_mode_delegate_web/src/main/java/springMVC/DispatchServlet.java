@@ -27,12 +27,13 @@ public class DispatchServlet extends HttpServlet {
 
     private void doDispathch(HttpServletRequest req, HttpServletResponse resp) {
         String uri = req.getRequestURI();
+        System.out.println(uri);
         String mid = req.getParameter("mid");
-        if ("getMemberByMid".equals(uri)) {
+        if (uri.indexOf("getMemberByMid")!=-1) {
             new MemberController().getMemberByMid(mid);
-        } else if ("getOrderByMid".equals(uri)) {
+        } else if (uri.indexOf("getOrderByMid")!=-1) {
             new OrderController().getOrderByMid(mid);
-        } else if ("getSystemByMid".equals(uri)) {
+        } else if (uri.indexOf("getSystemByMid")!=-1) {
             new SystemController().getSystemByMid(mid);
         }
 

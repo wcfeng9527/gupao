@@ -23,7 +23,7 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-/target/
+target
 
 *.class
 *.war
